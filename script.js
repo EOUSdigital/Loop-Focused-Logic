@@ -969,3 +969,42 @@ for (const key in values) {
 }
 
 console.log(countObj);
+
+
+//* 🔁 Exercise 34: Find First Palindrome
+
+//  📝 Task:
+//? Given an array of words, use a while loop to find and print the first word that’s a palindrome (same forward and backward).
+
+//  ✅ Pseudocode:
+
+//  SET array of words
+//  SET i equal to 0
+//  SET found to false
+
+//  WHILE i is less than palindrome length and is not found
+//      SET word equal to palindrome i
+//      SET reversed equal to word split reverse join
+//      IF word is strictly equal to reversed
+//          PRINT palindrome
+//          found = true
+//      INCREMENT
+//  END
+
+//! Solution
+
+const palindrome = ["not a palindrome", "nope", "almost", "A man, a plan, a canal. Panama", "race car", "unu"];
+let i = 0;
+let found = false;
+
+while (i < palindrome.length && !found) {
+    let word = palindrome[i];
+    let cleaned = word.toLowerCase().replace(/[^a-z]/g, "");
+    let reversed = cleaned.split("").reverse().join('');
+
+    if (cleaned === reversed) {
+        console.log("The first word that’s a palindrome is:", word);
+        found = true;
+    }
+    i++;
+}
