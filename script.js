@@ -900,3 +900,33 @@ for (let i = 1; i <= 20; i++) {
         console.log(i);
     }
 } 
+
+
+//* 🔁 Exercise 32: Capitalize First Letters
+
+//  📝 Task:
+//? Given an array of lowercase names, use for...of to print them with the first letter capitalized.
+
+//  ✅ Pseudocode:
+
+//  SET array of lowercase names
+
+//  FOR name of array
+//      PRINT name toUpperCase plus name slice
+//  END
+
+
+//! Solution
+
+const lowercaseNames = ["abigail", "adela", "brian", "colleen", "duff", "esther", "frank", "gail", "harlan", "ivy", "jack", "katherine", "logan", "mary", "norton", "odell", "percival", "rowena", "stephen", "tara", "upton", "velma", "william"];
+
+for (let name of lowercaseNames) {
+    console.log(name[0].toUpperCase() + name.slice(1));
+}
+
+//? 📈 Code Breakdown
+
+//  • name[0].toUpperCase() → capitalizes the first letter
+//  • name.slice(1) → gets the rest of the string starting from index 1
+//  • Concatenating them gives the capitalized version
+//  ✔️ This approach works for any name with at least one character.
