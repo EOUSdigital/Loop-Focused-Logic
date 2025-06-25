@@ -1111,3 +1111,47 @@ for (let i = 0; i < vowels.length; i++) {
 console.log("The total number of vowels is:", countVowels);
 
 
+//* 🔁 Exercise 38: Build Triangle Pattern
+
+//  📝 Task:
+//? Use nested loops to print a right-aligned triangle pattern of *, like:
+//  *
+//  **
+//  ***
+//  ****
+
+//  ✅ Pseudocode:
+
+//  FOR i from 1 to rows
+//    SET line to ""
+
+//    FOR j from 1 to (rows - i)
+//        ADD " " to line
+
+//    FOR k from 1 to i
+//        ADD "*" to line
+
+//    PRINT line
+
+
+//! Solution
+
+let rows = 4;
+
+for (let i = 1; i <= rows; i++) {
+    let line = '';
+
+    // Add spaces
+    for (let j = 1; j <= rows - 1; j++) {
+        line += ' ';
+    }
+
+    // Add stars
+    for (let k = 1; k <= i; k++) {
+        line += '*';
+    }
+    console.log(line);
+}
+
+
+
