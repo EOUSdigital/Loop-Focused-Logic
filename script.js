@@ -1008,3 +1008,40 @@ while (i < palindrome.length && !found) {
     }
     i++;
 }
+
+
+//* 🔁 Exercise 35: Repeat Prompt Until Number (simulate with array)
+
+//  📝 Task: Use do...while to simulate asking for input until the user types a number.
+//? Use an array like ["hello", "world", 42] to simulate input values.
+
+//  ✅ Pseudocode:
+
+//  SET simulatedInputs = ["hello", "world", 42]
+//  SET index = 0
+//  DECLARE inputValue
+
+//  DO
+//      SET inputValue = simulatedInputs[index]
+//      INCREMENT index
+//  WHILE typeof inputValue is not "number"
+
+//  PRINT inputValue
+
+//! Solution
+
+let simulatedInputs = ["hello", false, "world", 42, true,];
+let index2 = 0;
+let inputValue;
+
+do {
+    inputValue = simulatedInputs[index];
+    index2++;
+} while (typeof inputValue !== "number");
+
+console.log("First number entered:", inputValue);
+
+
+
+
+
