@@ -1076,6 +1076,38 @@ while (reverseNum > 0) {
 console.log(reverseArr);
 
 
+//* 🔁 Exercise 37: Count Vowels in a Sentence
 
+//  📝 Task:
+//? Loop through a string and count the number of vowels (a, e, i, o, u).
+
+//  ✅ Pseudocode:
+
+//  SET vowels equal to a string
+//  SET countVowels equal to 0
+//  SET char equal to an empty string
+
+//  FOR i less than vowels length
+//      char equal to vowels toLowerCase
+//      IF aeiou includes char
+//          INCREMENT countVowels
+//  END
+
+//  PRINT countVowels
+
+//! Solution
+
+let vowels = "In JavaScript, a string is a data type used to represent textual data as a sequence of characters. A string can contain a single word, a sentence, multiple sentences, or even just a single character.";
+let countVowels = 0;
+let char = "";
+
+for (let i = 0; i < vowels.length; i++) {
+    char = vowels[i].toLowerCase();
+    if ("aeiou".includes(char)) {
+        countVowels++;
+    }
+}
+
+console.log("The total number of vowels is:", countVowels);
 
 
