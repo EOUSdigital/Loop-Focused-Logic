@@ -915,7 +915,6 @@ for (let i = 1; i <= 20; i++) {
 //      PRINT name toUpperCase plus name slice
 //  END
 
-
 //! Solution
 
 const lowercaseNames = ["abigail", "adela", "brian", "colleen", "duff", "esther", "frank", "gail", "harlan", "ivy", "jack", "katherine", "logan", "mary", "norton", "odell", "percival", "rowena", "stephen", "tara", "upton", "velma", "william"];
@@ -930,3 +929,43 @@ for (let name of lowercaseNames) {
 //  • name.slice(1) → gets the rest of the string starting from index 1
 //  • Concatenating them gives the capitalized version
 //  ✔️ This approach works for any name with at least one character.
+
+
+//* 🔁 Exercise 33: Count Object Values Over 100
+
+//  📝 Task:
+//? Use for...in to count how many values in an object are greater than 100.
+
+//  ✅ Pseudocode:
+
+//  SET object to several values
+//  SET count object
+
+//  FOR each key in the object
+//      IF object key is greater than 100
+//      INCREMENT count object
+//  END
+
+//  PRINT count object
+
+//! Solution
+
+const values = {
+    a: 10,
+    b: 50,
+    c: 100,
+    d: 120,
+    e: "smile",
+    f: 150
+};
+
+let countObj = 0;
+
+for (const key in values) {
+    if (typeof values[key] === "number" && values[key] > 100) {
+        console.log(`${key.toUpperCase()}: ${values[key]}`);
+        countObj++;
+    }
+}
+
+console.log(countObj);
