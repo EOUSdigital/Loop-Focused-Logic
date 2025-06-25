@@ -879,3 +879,24 @@ for (const key in obj) {
     }
 }
 
+
+//* 🔁 Exercise 31: Skip Odd Numbers
+
+//  📝 Task:
+//? Use a for loop to print numbers 1–20, but skip all odd numbers.
+
+//  ✅ Pseudocode:
+
+//  SET even numbers array
+
+//  FOR i from 1 to 20
+//      IF i modulo 2 is strictly equal to 0
+//          PRINT i
+
+//! Solution
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+} 
