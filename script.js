@@ -1042,6 +1042,40 @@ do {
 console.log("First number entered:", inputValue);
 
 
+//* 🔁 Exercise 36: Reverse Digits of a Number
+
+//  📝 Task:
+//? Use a while loop to reverse the digits of a number (e.g., 123 → 321).
+
+//  ✅ Pseudocode:
+
+//  SET reverseNum equal to 123
+//  SET reverseArr equal to 0
+//  SET reminder2
+
+//  WHILE reverseNum is greater than 0
+//      reminder2 equal to reverseNum modulo 10
+//      reverseArr equal to reverseArr times 10 plus reminder2
+//      reverseNum equal to Math.floor reverseNum divide 10
+//  END
+
+//  PRINT reverseArr
+
+//! Solution
+
+let reverseNum = 123;
+let reverseArr = 0;
+let remainder2;
+
+while (reverseNum > 0) {
+    remainder2 = reverseNum % 10;
+    reverseArr = reverseArr * 10 + remainder2;
+    reverseNum = Math.floor(reverseNum / 10);
+}
+
+console.log(reverseArr);
+
+
 
 
 
