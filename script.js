@@ -1154,4 +1154,83 @@ for (let i = 1; i <= rows; i++) {
 }
 
 
+//* 🔁 Exercise 39: Find Key by Value (Case Insensitive)
 
+//  📝 Task:
+//? Search an object for a value (string) and print its key, ignoring case sensitivity.
+
+//  ✅ Pseudocode:
+
+//  SET object with key-value pairs
+//  SET search value (e.g. "three")
+
+//  FOR each key in object
+//      IF lowercase of object[key] equals lowercase of search value
+//          PRINT the key
+
+//! Solution
+
+const objectValue = {
+    a: "one",
+    b: "Two",
+    c: "thRee",
+    d: "fOUr",
+    e: "fivE"
+}
+
+const searchValues = "three";
+
+for (const key in objectValue) {
+    if (objectValue[key].toLowerCase() === searchValues.toLowerCase()) {
+        console.log(`Found match at key: ${key}`);
+        break;
+    }
+}
+
+
+//* 🔁 Exercise 40: Categorize Array by Type
+
+//  📝 Task:
+//? Use a for...of loop to iterate through a mixed array and group items into separate arrays by type (string, number, boolean).
+
+//  ✅ Pseudocode:
+
+//  SET mixedArray
+//  SET string
+//  SET number
+//  SET boolean
+
+//  FOR let mixed of mixedArray
+//      IF typeof item strictly equal to "string"
+//          string push item
+//      IF typeof item strictly equal to "number"
+//          number push item
+//      IF typeof item strictly equal to "boolean"
+//          boolean push item
+
+//  PRINT string
+//  PRINT number
+//  PRINT boolean
+
+//! Solution
+
+// Set up the mixed array
+let mixedArrays = ["hello", 42, true, "world", false, 3.14, 100, "JavaScript", 77, "React"];
+
+let strings = [];
+let numbers2 = [];
+let booleans = [];
+
+for (let item of mixedArrays) {
+    if (typeof item === "string") {
+        strings.push(item);
+    } else if (typeof item === "number") {
+        numbers2.push(item);
+    } else if (typeof item === "boolean") {
+        booleans.push(item);
+    }
+}
+
+console.log("Strings:", strings);
+console.log("Numbers:", numbers2);
+console.log("Booleans:", booleans);
