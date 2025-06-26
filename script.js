@@ -1341,3 +1341,46 @@ if (odd % 2 !== 0) {
 }
 
 
+//* 🔁 Exercise 44: Print Words Until One Has More Than 6 Letters
+
+//? 📝 Task: Use a for...of loop to print each word until you reach one longer than 6 characters.
+
+//  ✅ Pseudocode:
+//  SET a string of text
+//  SPLIT the string into words
+
+//  FOR each word in the list of words
+//      PRINT the word
+//      IF the word’s length is greater than 6
+//          BREAK the loop
+
+//! Solution
+
+const text = "The for...of statement executes a loop that operates on a sequence of values sourced from an iterable object.";
+const splitWords = text.split(" ");
+
+for (const word of splitWords) {
+    console.log(word);
+    if (word.length > 6) {
+        break;
+    }
+}
+
+
+//* 🔁 Exercise 45: Print Square Root Table (1 to 10)
+
+//? 📝 Task: Use a for loop to print numbers from 1–10 and their square roots (rounded to 2 decimals).
+
+//  ✅ Pseudocode:
+//  FOR i from 1 to 10
+//    CALCULATE the square root of i
+//    ROUND the square root to 2 decimal places
+//    PRINT i and its square root
+
+
+//! Solution
+
+for (let i = 1; i <= 10; i++) {
+    let sqrt = Math.sqrt(i).toFixed(2);
+    console.log(`√${i} = ${sqrt}`);
+}
