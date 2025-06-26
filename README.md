@@ -60,7 +60,7 @@ Loop through the following array and print each fruit.
 
 #### ✅ Pseudocode:
 ```javascript
-SET variable fruits to an array
+SET the variable fruits to an array
 FOR each fruit in fruits:
     PRINT "Today's snack:" followed by the fruit
 ```
@@ -143,7 +143,7 @@ Write a function that takes a number n and returns the sum of all numbers from 1
 FUNCTION sumToN(n)
     SET total = 0
     FOR i from 1 to n (inclusive)
-        ADD i to total
+        ADD i to the total
     RETURN total
 END FUNCTION
 ```
@@ -201,7 +201,7 @@ Loop through an object and convert all values to uppercase strings.
 #### ✅ Pseudocode:
 ```javascript
 SET user to an object with properties    → Declares the variable
-FOR each key in user
+FOR each key in the user
     PRINT key in uppercase
     PRINT user[key] in uppercase
 ```
@@ -259,7 +259,7 @@ Simulate a user trying to enter a password. Keep looping until the user "enters"
 
 #### ✅ Pseudocode:
 ```javascript
-SET password to an incorrect starting value
+SET the password to an incorrect starting value
 DO
     PRINT "Wrong password..."
     SET password to a new value (simulate user input)
@@ -297,7 +297,7 @@ Use a for loop to print the multiplication table of 3 (from 3×1 to 3×10).
 
 #### ✅ Pseudocode:
 ```javascript
-SET multiplier to 3
+SET the multiplier to 3
 FOR i from 1 to 10
     PRINT multiplier x i = result
 ```
@@ -408,15 +408,15 @@ Simulate guesses from an array of values until the correct guess is made.
 
 #### ✅ Pseudocode:
 ```javascript
-SET guesses to array
-SET correct number
+SET guesses in the array
+SET the correct number
 SET index to 0
 DECLARE guess
 
 DO
     SET guess to guesses[index]
     INCREMENT index
-        IF guess is not equal to correct      
+        IF the guess is not equal to the correct      
             PRINT "Wrong guess..."
     WHILE guess is not equal to the correct
 
@@ -513,7 +513,7 @@ SET words array
 SET totalCharacters = 0
 
 FOR each word in words
-    ADD length of word to totalCharacters
+    ADD the length of the word to totalCharacters
 
 PRINT totalCharacters
 ```
@@ -541,9 +541,9 @@ Loop through object keys and print them in uppercase.
 
 #### ✅ Pseudocode:
 ```javascript
-SET car to an object with properties
-FOR each key in user
-    PRINT key in uppercase : car[key]
+SET the car to an object with properties
+FOR each key in the user
+    PRINT key in uppercase: car[key]
 ```
 
 #### 🧮 Solution:
@@ -688,7 +688,7 @@ Use a for...of loop to print only the names that contain the letter "a".
 SET names array
 
 FOR each name in names
-    IF name includes "a"
+    IF the name includes "a"
         PRINT the name
 ```
 
@@ -744,11 +744,11 @@ Use a while loop to compute the sum of all digits of a number.
 #### ✅ Pseudocode:
 ```javascript
 SET sum
-SET number to a number
+SET the number to a number
 
-WHILE number is greater than 0
+WHILE the number is greater than 0
     sum plus equal to number modulo 10
-    number equal to Math floor where number divide by 10
+    number equal to Math.floor where number is divided by 10
 
 PRINT sum
 ```
@@ -768,7 +768,7 @@ console.log(sum);                               // Output: 1 + 2 + 3 = 6
 ---
 ---
 
-### 🔁 Exercise 27: Print 5x5 Square
+### 🔁 Exercise 27: Print a 5x5 Square
 
 #### 📝 Task: 
 ```javascript
@@ -809,7 +809,7 @@ Use a for...of loop to filter out words shorter than 4 letters from an array.
 #### ✅ Pseudocode:
 ```javascript
 SET array of words
-FOR each word in array
+FOR each word in the array
     IF word length is greater than or equal to 4
         PRINT the word
 ```
@@ -839,10 +839,10 @@ SET mixed array
 SET trueCount
 SET falseCount
 
-FOR each i less than array length
-    IF array is true
+FOR each i less than the array length
+    IF the array is true
         INCREMENT true
-    IF array is false
+    IF the array is false
         INCREMENT false
 
 PRINT true
@@ -875,11 +875,11 @@ Use for...in to search for a value in an object. If the value is found, print th
 
 #### ✅ Pseudocode:
 ```javascript
-SET object to several values
+SET the object to several values
 SET search value
 
 FOR each key in the object
-    IF object key is equal to search value
+    IF the object key is equal to the search value
         PRINT key
         BREAK
 ```
@@ -969,11 +969,11 @@ Use for...in to count how many values in an object are greater than 100.
 
 #### ✅ Pseudocode:
 ```javascript
-SET object to several values
+SET the object to several values
 SET count object
 
 FOR each key in the object
-    IF object key is greater than 100
+    IF the object key is greater than 100
     INCREMENT count object
 
 PRINT count object
@@ -1017,7 +1017,7 @@ SET array of words
 SET i equal to 0
 SET found to false
 
-WHILE i is less than palindrome length and is not found
+WHILE i is less than the palindrome length and is not found
     SET word equal to palindrome i
     SET reversed equal to word split reverse join
     IF word is strictly equal to reversed
@@ -1220,10 +1220,10 @@ Search an object for a value (string) and print its key, ignoring case sensitivi
 #### ✅ Pseudocode:
 ```javascript
 SET object with key-value pairs
-SET search value (e.g. "three")
+SET search value (e.g., "three")
 
-FOR each key in object
-    IF lowercase of object[key] equals lowercase of search value
+FOR each key in the object
+    IF the lowercase of the object[key] equals the lowercase of the search value
         PRINT the key
 ```
 
@@ -1264,11 +1264,11 @@ SET number
 SET boolean
 
 FOR let item of mixedArray
-    IF typeof item strictly equal to "string"
+    IF typeof item is strictly equal to "string"
         string push item
-    IF typeof item strictly equal to "number"
+    IF typeof item is strictly equal to "number"
         number push item
-    IF typeof item strictly equal to "boolean"
+    IF typeof item is strictly equal to "boolean"
         boolean push item
 
 PRINT string
@@ -1310,12 +1310,12 @@ Use a while loop to compute the factorial of a number (e.g., 5! = 5 × 4 × 3 ×
 #### ✅ Pseudocode:
 ```javascript
 FUNCTION factorialOf
-    SET result to 1
+    SET the result to 1
     SET w to 1
     SET factorial to 1
 
     WHILE w is less than or equal to factorial
-        result times equal to w
+        Result times equal to w
         INCREMENT w
     RETURN result
 
@@ -1351,7 +1351,7 @@ Use for...in to loop through an object and print only the keys whose values are 
 SET object with mixed types
 CREATE an empty array for string values
 
-FOR each key in object
+FOR each key in the object
     IF typeof value is string
         PUSH the key or value to the string array
 
@@ -1391,7 +1391,7 @@ Use a do...while loop and a simulated array of inputs. Print and stop once an od
 
 #### ✅ Pseudocode:
 ```javascript
-SET array of numbers
+SET an array of numbers
 SET index to 0
 SET value
 
@@ -1414,7 +1414,7 @@ do {
     index4++;
 } while (odd % 2 === 0 && index4 < inputs.length);
 
-//  To avoid accessing undefined, where no odd number exists we will use if...else statement.
+//  To avoid accessing undefined, where no odd number exists, we will use an if...else statement.
 
 if (odd % 2 !== 0) {
     console.log("The first odd number is:", odd);
@@ -1468,7 +1468,7 @@ Use a for loop to print numbers from 1–10 and their square roots (rounded to 2
 #### ✅ Pseudocode:
 ```javascript
 FOR i from 1 to 10
-    CALCULATE square root of i
+    CALCULATE the square root of i
     ROUND the square root to 2 decimal places
     PRINT i and its square root
 ```
@@ -1533,8 +1533,8 @@ SET longestWords array
 SET lengthy
 
 FOR word of longestWord
-    IF word length is greater than the lengthy length
-        lengthy is equal to word
+    IF the word length is greater than the lengthy length
+        lengthy is equal to a word
 
 PRINT   lengthy
 ```
@@ -1573,7 +1573,7 @@ SET booleanCount
 FOR properties in exampleObj
     SET value equal to exampleObj
     SET type equal to typeof value
-    IF type strictly equal to string
+    IF type is strictly equal to string
         Increment stringCount
     IF type strictly equal to 
         Increment numberCount
@@ -1636,7 +1636,7 @@ SET currentNum equal to Match.abs digits
 
 WHILE currentNum is greater than 0
     LET digit equal to current modulo 10
-    IF digit modulo 2 strictly equal to 0
+    IF the digit modulo 2 is strictly equal to 0
         sumOfEvens plus equal to digit
     currentNum equal to Math.floor currentNum divide by 10
 
