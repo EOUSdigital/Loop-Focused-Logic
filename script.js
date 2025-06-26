@@ -1539,6 +1539,35 @@ while (currentNum > 0) {
 console.log("Sum of even digits:", sumOfEvens);
 
 
+//* 🔁 Exercise 50: Draw Number Triangle
 
+//?  📝 Task: Use nested for loops to print this pattern:
+//  1
+//  1 2
+//  1 2 3
+//  1 2 3 4
+
+//  ✅ Pseudocode:
+
+//  SET max equal to 4
+
+//  FOR initializes a loop where i starts at 1 and increments by 1 until it reaches the given array number
+//      SET line
+//      FOR initializes a loop where j begins at 1 and increments by 1 until it reaches i
+//          line plus equal to j plus " "
+
+//  PRINT line to output the pattern value to the console
+
+//! Solution
+
+let max = 4;
+
+for (let i = 1; i <= max; i++) {
+    let line = "";
+    for (let j = 1; j <= i; j++) {
+        line += j + " ";
+    }
+    console.log(line);
+}
 
 
