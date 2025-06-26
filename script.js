@@ -1234,3 +1234,39 @@ for (let item of mixedArrays) {
 console.log("Strings:", strings);
 console.log("Numbers:", numbers2);
 console.log("Booleans:", booleans);
+
+
+//* 🔁 Exercise 41: Factorial Calculator
+
+//? 📝 Task: Use a while loop to compute the factorial of a number (e.g., 5! = 5 × 4 × 3 × 2 × 1).
+
+//  ✅ Pseudocode:
+
+//  FUNCTION factorialOf
+//      SET result to 1
+//      SET w to 1
+//      SET factorial to 1
+
+//      WHILE w is less than or equal to factorial
+//          result times equal to w
+//          INCREMENT w
+//      RETURN result
+
+//  PRINT factorialOf  
+
+//! Solution
+
+function factorialOf(n) {
+    let result = 1;
+    let i = 1;
+    while (i <= n) {
+        result *= i;
+        i++;
+    }
+    return result;
+}
+
+console.log(factorialOf(5));                    // Output: 120
+
+
+
