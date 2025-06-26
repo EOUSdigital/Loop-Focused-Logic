@@ -1447,6 +1447,98 @@ for (const word of longestWord) {
 console.log("The longest word is:", lengthy);
 
 
+//* 🔁 Exercise 48: Tally Types in Mixed Object
+
+//? 📝 Task: Use for...in to tally how many properties are string, number, or boolean.
+
+//  ✅ Pseudocode:
+//  SET object
+//  SET stringCount
+//  SET numberCount
+//  SET booleanCount
+
+//  FOR properties in exampleObj
+//      SET value equal to exampleObj
+//      SET type equal to typeof value
+//      IF type strictly equal to string
+//          Increment stringCount
+//      IF type strictly equal to 
+//          Increment numberCount
+//      IF type strictly equal to 
+//          Increment booleanCount
+
+//  PRINT stringCount
+//  PRINT numberCount
+//  PRINT booleanCount
+
+//! Solution
+
+const exampleObj = {
+    name: "Emily",
+    age: 30,
+    isStudent: true,
+    score: 95.5,
+    isEmployed: true,
+    city: "Paris",
+    hasPet: false
+};
+
+let stringCount = 0;
+let numberCount = 0;
+let booleanCount = 0;
+
+for (const properties in exampleObj) {
+    const value = exampleObj[properties];
+    const type = typeof value;
+    
+    if (type === 'string') {
+        stringCount++;
+    } else if (type === 'number') {
+        numberCount++;
+    } else if (type === 'boolean') {
+        booleanCount++;
+    }
+}
+
+console.log("String properties:", stringCount);
+console.log("Number properties:", numberCount);
+console.log("Boolean properties:", booleanCount);
+
+
+//* 🔁 Exercise 49: Sum All Even Digits of a Number
+
+//? 📝 Task: Use a while loop to extract digits from a number and sum only the even ones.
+
+//  ✅ Pseudocode:
+//  SET digits
+//  SET sumOfEvens
+//  SET currentNum equal to Match.abs digits
+
+//  WHILE currentNum is greater than 0
+//      LET digit equal to current modulo 10
+//      IF digit modulo 2 strictly equal to 0
+//          sumOfEvens plus equal to digit
+//      currentNum equal to Math.floor currentNum divide by 10
+
+//  PRINT sumOfEvens
+
+//! Solution
+
+let digits = 1234567;
+let sumOfEvens = 0;
+let currentNum = Math.abs(digits);
+
+while (currentNum > 0) {
+    let digit = currentNum % 10;
+    if (digit % 2 === 0) {
+        sumOfEvens += digit;
+    }
+    currentNum = Math.floor(currentNum / 10);
+}
+
+console.log("Sum of even digits:", sumOfEvens);
+
+
 
 
 
