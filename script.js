@@ -1384,3 +1384,36 @@ for (let i = 1; i <= 10; i++) {
     let sqrt = Math.sqrt(i).toFixed(2);
     console.log(`√${i} = ${sqrt}`);
 }
+
+
+//* 🔁 Exercise 46: Count Uppercase Letters
+
+//? 📝 Task: Use a loop to count how many uppercase letters are in a given string.
+
+//  ✅ Pseudocode:
+//  SET uppercaseLetters string
+//  SET upperCount
+
+//  FOR word of uppercaseLetters
+//      FOR  char of word
+//          IF char is strictly equal to char toUpperCase and char is NOT strictly equal to char toLowerCase 
+//              INCREMENT upperCount
+
+//  PRINT upperCount
+
+//! Solution
+
+const uppercaseLetters = ["ability", "able", "bake", "balance", "category", "Catholic", "CEO", "democracy", "Democrat", "DNA", "efficient", "effort", "feeling", "fellow", "guest", "guide", "hope", "horizon", "ideal", "identification", "Japanese", "jet", "kind", "king", "least", "leather", "map", "margin", "Mexican", "native", "natural", "okay", "old", "Olympic", "passion", "past", "PC", "qualify", "quality", "recommendation", "record", "Republican", "sacred", "scenario", "Senate", "technique", "technology", "TV", "uniform", "union", "unique", "video", "view", "wisdom", "wise", "wish", "yellow", "yes", "yesterday", "zone"];
+
+let upperCount = 0;
+
+for (const word of uppercaseLetters) {
+    for (const char of word) {
+        if (char === char.toUpperCase() && char !== char.toLowerCase()) {
+            upperCount++;
+        }
+    }
+}
+
+console.log("The total of uppercase letter is:", upperCount);
+
