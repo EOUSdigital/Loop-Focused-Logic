@@ -1269,4 +1269,37 @@ function factorialOf(n) {
 console.log(factorialOf(5));                    // Output: 120
 
 
+//* 🔁 Exercise 42: Filter Object Properties by Type
 
+//? 📝 Task: Use for...in to loop through an object and print only the keys whose values are strings.
+
+//  ✅ Pseudocode:
+//  SET object with mixed types
+//  CREATE an empty array for string values
+
+//  FOR each key in the object
+//      IF typeof value is string
+//          PUSH the key or value to the string array
+
+//  PRINT the array of string values or keys
+
+//! Solution
+
+const filterObj = {
+    a: 1,
+    b: "one",
+    c: true,
+    d: 4,
+    e: "object",
+    f: false
+};
+
+let string = [];
+
+for (const key in filterObj) {
+    if (typeof filterObj[key] === "string"){
+        string.push(key);
+    }
+}
+
+console.log("Keys with string values:", string);
