@@ -1303,3 +1303,41 @@ for (const key in filterObj) {
 }
 
 console.log("Keys with string values:", string);
+
+
+//* 🔁 Exercise 43: Loop Until Odd Found
+
+//? 📝 Task: Use a do...while loop and a simulated array of inputs. Print and stop once an odd number is found.
+
+//  ✅ Pseudocode:
+//  SET array of numbers
+//  SET index to 0
+//  SET value
+
+//  DO
+//      SET value to array[index]
+//      INCREMENT index
+//  WHILE value is even (value % 2 === 0)
+
+//  PRINT value
+
+//! Solution
+
+let inputs = [2, 4, 6, 8, 9];
+let index4 = 0;
+let odd;
+
+do {
+    odd = inputs[index4];
+    index4++;
+} while (odd % 2 === 0 && index4 < inputs.length);
+
+//  To avoid accessing undefined, where no odd number exists, we will use an if...else statement.
+
+if (odd % 2 !== 0) {
+    console.log("The first odd number is:", odd);
+} else {
+    console.log("No odd numbers found.");
+}
+
+
