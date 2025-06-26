@@ -1417,3 +1417,36 @@ for (const word of uppercaseLetters) {
 
 console.log("The total of uppercase letter is:", upperCount);
 
+
+//* 🔁 Exercise 47: Find Longest Word in Array
+
+//? 📝 Task: Use a for...of loop to find and print the longest word in an array of strings.
+
+//  ✅ Pseudocode:
+//  SET longestWords array
+//  SET lengthy
+
+//  FOR word of longestWord
+//      IF word length is greater than the lengthy length
+//          lengthy is equal to word
+
+//  PRINT   lengthy
+
+//! Solution
+
+const longestWord = ["ability", "able", "bake", "balance", "category", "Catholic", "CEO", "democracy", "Democrat", "DNA", "efficient", "effort", "feeling", "fellow", "guest", "guide", "hope", "horizon", "ideal", "identification", "Japanese", "jet", "kind", "king", "least", "leather", "map", "margin", "Mexican", "native", "natural", "okay", "old", "Olympic", "passion", "past", "PC", "qualify", "quality", "recommendation", "record", "Republican", "sacred", "scenario", "Senate", "technique", "technology", "TV", "uniform", "union", "unique", "video", "view", "wisdom", "wise", "wish", "yellow", "yes", "yesterday", "zone"];
+
+let lengthy = ""; 
+
+for (const word of longestWord) {
+    if (word.length > lengthy.length) {
+        lengthy = word;
+    }
+}
+
+console.log("The longest word is:", lengthy);
+
+
+
+
+
